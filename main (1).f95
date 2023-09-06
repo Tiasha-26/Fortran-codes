@@ -1,0 +1,7 @@
+implicit none 
+real::T850,T500,T700,TD850,TD700,K2,TT2
+read(*,*)T850,T500,T700,TD850,TD700
+K2=(T850-T500)+TD850-(T700-TD700)
+TT2=(T850-T500)+(TD850-T500)
+write(*,*)'K index:',K2,'TT index:',TT2
+end
